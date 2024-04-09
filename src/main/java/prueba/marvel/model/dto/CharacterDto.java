@@ -9,4 +9,6 @@ import lombok.Data;
 public class CharacterDto {
     private String name;
     private String suit;
+    public CharacterDto(String ironMan, String markXlii) {
+    }
 }

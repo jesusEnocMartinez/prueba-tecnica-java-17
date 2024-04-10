@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: prueba.marvel.PruebaTecnicaJava17ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.226 s - in prueba.marvel.PruebaTecnicaJava17ApplicationTests

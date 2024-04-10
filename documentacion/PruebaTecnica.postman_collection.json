@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "f7fb2e01-567c-46c3-8e25-84e5b595612a",
+		"name": "PruebaTecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "10693194"
+	},
+	"item": [
+		{
+			"name": "LocalHost",
+			"item": [
+				{
+					"name": "http://localhost:8090/api/v1/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8090/api/v1/"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/v1/marvel/characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8090/api/v1/marvel/characters"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/v1/characters/post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"name\": \"enoc\",\r\n    \"age\": 35,\r\n    \"gender\": \"Male\",\r\n    \"lastName\": \"Stark\",\r\n    \"ability\": \"Genius-level intellect, expert engineer and inventor, powered armor suit\",\r\n    \"suit\": \"Iron Man suit\",\r\n    \"attribute1\": \"Super strength\",\r\n    \"attribute2\": \"Flight\",\r\n    \"attribute3\": \"Energy repulsors\",\r\n    \"attribute4\": \"Missile launchers\",\r\n    \"attribute5\": \"Regenerative life support\",\r\n    \"attribute6\": \"Holographic heads-up display\",\r\n    \"message\": \"Character created successfully\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8090/api/v1/characters/post"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/v1/characters/All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8090/api/v1/characters/All"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/v1/characters/get/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8090/api/v1/characters/get/1"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/v1/characters/put/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"name\": \"airoman\",\r\n    \"age\": 40,\r\n    \"gender\": \"Male\",\r\n    \"lastName\": \"Stark\",\r\n    \"ability\": \"Genius-level intellect, expert engineer and inventor, powered armor suit\",\r\n    \"suit\": \"Iron Man suit\",\r\n    \"attribute1\": \"Super strength\",\r\n    \"attribute2\": \"Flight\",\r\n    \"attribute3\": \"Energy repulsors\",\r\n    \"attribute4\": \"Missile launchers\",\r\n    \"attribute5\": \"Regenerative life support\",\r\n    \"attribute6\": \"Holographic heads-up display\",\r\n    \"message\": \"Character created successfully\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8090/api/v1/characters/put/1"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/v1/characters/delete/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8090/api/v1/characters/delete/1"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/v1/characters/getCharacterById?id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/v1/characters/getCharacterById?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"characters",
+								"getCharacterById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ApiMarvel",
+			"item": [
+				{
+					"name": "https://gateway.marvel.com:443/v1/public/characters?apikey=868290577cc89103338c36e8b3d49276&hash=308896beef137cb3da3d2435e9d3a681&ts=1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gateway.marvel.com:443/v1/public/characters?apikey=868290577cc89103338c36e8b3d49276&hash=308896beef137cb3da3d2435e9d3a681&ts=1",
+							"protocol": "https",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"port": "443",
+							"path": [
+								"v1",
+								"public",
+								"characters"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "868290577cc89103338c36e8b3d49276"
+								},
+								{
+									"key": "hash",
+									"value": "308896beef137cb3da3d2435e9d3a681"
+								},
+								{
+									"key": "ts",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

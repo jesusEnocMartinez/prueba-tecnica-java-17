@@ -1,0 +1,6 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "appService.preDeployTask": "package:prueba-tecnica-java-17",
+    "appService.deploySubpath": "target\\prueba-tecnica-java-17-0.0.1-SNAPSHOT.jar",
+    "appService.defaultWebAppToDeploy": "/subscriptions/a58c678d-c100-4fe9-b975-7b6f5ea63584/resourceGroups/pruebadev17_group/providers/Microsoft.Web/sites/pruebadev17"
+}

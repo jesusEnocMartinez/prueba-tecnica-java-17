@@ -9,5 +9,7 @@ Follow these steps to fulfill the requirements and run the project:
 	3.	Clone the repository using the command git clone [repository URL].
 	4.	Open the project in your preferred IDE.
 	5.	If you’re using Visual Studio Code, run the command mvn spring-boot:run in the terminal to start the application.
+ 	6.	Review technical documentation in the Documentation folder.
+ 
 
  
